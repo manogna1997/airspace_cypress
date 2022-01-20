@@ -1,0 +1,9 @@
+{
+    "projectId": "airspace",
+    "env" : {
+       "url" : "https://the-internet.herokuapp.com",
+       "username":"tomsmith",
+       "password":"SuperSecretPassword!",
+       "mobile_viewport" : "iphone-5"
+    }
+ }

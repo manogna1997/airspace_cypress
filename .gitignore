@@ -1,0 +1,3 @@
+node_modules/**
+**cypress/integration/1*
+**cypress/integration/2*
