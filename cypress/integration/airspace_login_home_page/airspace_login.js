@@ -7,7 +7,7 @@ before(() => {
 
 
 
-// Happy Path Test cases with Valid Credentials
+// Check Home Page layout
 context('[AS.G0] | Check the Home Login Page Layout', () => {
 
     it('[AS.G0.T1] | Pass in Valid credentials to login for the first time', () => {
@@ -15,6 +15,8 @@ context('[AS.G0] | Check the Home Login Page Layout', () => {
         cy.document().should('have.property', 'charset').and('eq', 'UTF-8')
         cy.get('[id=username]').should('contain','')
         cy.get('[id=password]').should('contain','')
+        // check for icon class
+        cy.get('button[type=submit] i').should('have.class','fa-sign-in')
     })
 
 })
